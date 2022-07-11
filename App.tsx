@@ -171,6 +171,7 @@ const App = () => {
           data={config.data as LineData}
           xAxis={{
             enabled: false,
+            axisMaximum: 100,
           }}
           style={styles.lineContainer}
         />
