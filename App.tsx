@@ -9,15 +9,8 @@
  */
 
 import React, {Fragment, useEffect, useState} from 'react';
-import {
-  processColor,
-  StyleSheet,
-  Text,
-  useColorScheme,
-  View,
-} from 'react-native';
+import {processColor, StyleSheet, Text, View} from 'react-native';
 
-import {Colors} from 'react-native/Libraries/NewAppScreen';
 import {LineChart, LineData, PieChart} from 'react-native-charts-wrapper';
 
 /*
@@ -62,8 +55,6 @@ const colors = [
 ];
 
 const App = () => {
-  const isDarkMode = useColorScheme() === 'dark';
-
   const [state, setState] = useState({
     values: [0],
     colorIndex: 0,
